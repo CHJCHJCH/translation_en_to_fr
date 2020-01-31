@@ -1,4 +1,7 @@
 {
+  "architectures": [
+    "T5WithLMHeadModel"
+  ],
   "d_ff": 3072,
   "d_kv": 64,
   "d_model": 768,
