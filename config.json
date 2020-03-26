@@ -5,6 +5,7 @@
   "d_ff": 3072,
   "d_kv": 64,
   "d_model": 768,
+  "decoder_start_token_id": 0,
   "dropout_rate": 0.1,
   "finetuning_task": null,
   "initializer_factor": 1.0,
@@ -19,6 +20,38 @@
   "output_past": true,
   "pruned_heads": {},
   "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
   "torchscript": false,
   "use_bfloat16": false,
   "vocab_size": 32128
