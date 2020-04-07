@@ -32,21 +32,18 @@
     },
     "translation_en_to_de": {
       "early_stopping": true,
-      "length_penalty": 2.0,
       "max_length": 300,
       "num_beams": 4,
       "prefix": "translate English to German: "
     },
     "translation_en_to_fr": {
       "early_stopping": true,
-      "length_penalty": 2.0,
       "max_length": 300,
       "num_beams": 4,
       "prefix": "translate English to French: "
     },
     "translation_en_to_ro": {
       "early_stopping": true,
-      "length_penalty": 2.0,
       "max_length": 300,
       "num_beams": 4,
       "prefix": "translate English to Romanian: "
