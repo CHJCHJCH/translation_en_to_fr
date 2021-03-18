@@ -1,5 +1,9 @@
 ---
-language: en
+language: 
+- en
+- fr
+- ro
+- de
 datasets:
 - c4
 tags:
