@@ -22,22 +22,33 @@ Thereby, the following datasets were being used for (1.) and (2.):
 
 1. **Datasets used for Unsupervised denoising objective**:
 
-- Pretraining Dataset: [C4](https://huggingface.co/datasets/c4)
+- [C4](https://huggingface.co/datasets/c4)
+- [Wiki-DPR](https://huggingface.co/datasets/wiki_dpr)
+
 
 2. **Datasets used for Supervised text-to-text language modeling objective**
 
 - Sentence acceptability judgment
-  - (CoLA (Warstadt et al., 2018))
-- Sentiment analysis (SST-2 (Socher et al., 2013))
-- Paraphrasing/sentence similarity (MRPC (Dolan and Brockett, 2005), STS-B (Cer
-et al., 2017), QQP (Iyer et al., 2017))
-- Natural language inference (MNLI (Williams et al., 2017), QNLI (Rajpurkar et al.,
-2016), RTE (Dagan et al., 2005), CB (De Marneff et al., 2019))
-- Coreference resolution (WNLI and WSC (Levesque et al., 2012))
-- Sentence completion (COPA (Roemmele et al., 2011))
-- Word sense disambiguation (WIC (Pilehvar and Camacho-Collados, 2018))
-- Question answering (MultiRC (Khashabi et al., 2018), ReCoRD (Zhang et al., 2018),
-BoolQ (Clark et al., 2019))
+  - CoLA [Warstadt et al., 2018](https://arxiv.org/abs/1805.12471)
+- Sentiment analysis 
+  - SST-2 [Socher et al., 2013](https://nlp.stanford.edu/~socherr/EMNLP2013_RNTN.pdf)
+- Paraphrasing/sentence similarity
+  - MRPC [Dolan and Brockett, 2005](https://aclanthology.org/I05-5002)
+  - STS-B [Ceret al., 2017](https://arxiv.org/abs/1708.00055)
+  - QQP [Iyer et al., 2017](https://quoradata.quora.com/First-Quora-Dataset-Release-Question-Pairs)
+- Natural language inference
+  - MNLI [Williams et al., 2017](https://arxiv.org/abs/1704.05426)
+  - QNLI [Rajpurkar et al.,2016](https://arxiv.org/abs/1606.05250)
+  - RTE [Dagan et al., 2005](https://link.springer.com/chapter/10.1007/11736790_9) 
+  - CB [De Marneff et al., 2019](https://semanticsarchive.net/Archive/Tg3ZGI2M/Marneffe.pdf)
+- Sentence completion
+  - COPA [Roemmele et al., 2011](https://www.researchgate.net/publication/221251392_Choice_of_Plausible_Alternatives_An_Evaluation_of_Commonsense_Causal_Reasoning)
+- Word sense disambiguation
+  - WIC [Pilehvar and Camacho-Collados, 2018](https://arxiv.org/abs/1808.09121)
+- Question answering
+  - MultiRC [Khashabi et al., 2018](https://aclanthology.org/N18-1023)
+  - ReCoRD [Zhang et al., 2018](https://arxiv.org/abs/1810.12885)
+  - BoolQ [Clark et al., 2019](https://arxiv.org/abs/1905.10044)
 
 ## All T5 checkpoints
 
