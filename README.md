@@ -1,5 +1,5 @@
 ---
-language: 
+language:
 - en
 - fr
 - ro
@@ -9,8 +9,43 @@ datasets:
 tags:
 - summarization
 - translation
-
 license: apache-2.0
+model-index:
+- name: t5-base
+  results:
+  - task:
+      type: summarization
+      name: Summarization
+    dataset:
+      name: samsum
+      type: samsum
+      config: samsum
+      split: test
+    metrics:
+    - name: ROUGE-1
+      type: rouge
+      value: 22.6948
+      verified: true
+    - name: ROUGE-2
+      type: rouge
+      value: 6.5849
+      verified: true
+    - name: ROUGE-L
+      type: rouge
+      value: 19.1904
+      verified: true
+    - name: ROUGE-LSUM
+      type: rouge
+      value: 20.833
+      verified: true
+    - name: loss
+      type: loss
+      value: 2.4283266067504883
+      verified: true
+    - name: gen_len
+      type: gen_len
+      value: 18.3211
+      verified: true
 ---
 
 [Google's T5](https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html) 
