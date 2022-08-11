@@ -1,5 +1,5 @@
 ---
-language: 
+language:
 - en
 - fr
 - ro
@@ -9,8 +9,43 @@ datasets:
 tags:
 - summarization
 - translation
-
 license: apache-2.0
+model-index:
+- name: t5-base
+  results:
+  - task:
+      type: summarization
+      name: Summarization
+    dataset:
+      name: cnn_dailymail
+      type: cnn_dailymail
+      config: 3.0.0
+      split: train
+    metrics:
+    - name: ROUGE-1
+      type: rouge
+      value: 23.6366
+      verified: true
+    - name: ROUGE-2
+      type: rouge
+      value: 10.5944
+      verified: true
+    - name: ROUGE-L
+      type: rouge
+      value: 19.3398
+      verified: true
+    - name: ROUGE-LSUM
+      type: rouge
+      value: 22.0539
+      verified: true
+    - name: loss
+      type: loss
+      value: 2.488492965698242
+      verified: true
+    - name: gen_len
+      type: gen_len
+      value: 18.9737
+      verified: true
 ---
 
 # Model Card for T5 Base
