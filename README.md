@@ -1,5 +1,5 @@
 ---
-language: 
+language:
 - en
 - fr
 - ro
@@ -9,8 +9,43 @@ datasets:
 tags:
 - summarization
 - translation
-
 license: apache-2.0
+model-index:
+- name: t5-base
+  results:
+  - task:
+      type: summarization
+      name: Summarization
+    dataset:
+      name: HadiPourmousa/TextSummarization
+      type: HadiPourmousa/TextSummarization
+      config: HadiPourmousa--TextSummarization
+      split: train
+    metrics:
+    - name: ROUGE-1
+      type: rouge
+      value: 7.1205
+      verified: true
+    - name: ROUGE-2
+      type: rouge
+      value: 1.8644
+      verified: true
+    - name: ROUGE-L
+      type: rouge
+      value: 6.7822
+      verified: true
+    - name: ROUGE-LSUM
+      type: rouge
+      value: 6.789
+      verified: true
+    - name: loss
+      type: loss
+      value: 4.093219757080078
+      verified: true
+    - name: gen_len
+      type: gen_len
+      value: 19.0
+      verified: true
 ---
 
 # Model Card for T5 Base
