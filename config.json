@@ -1,6 +1,6 @@
 {
   "architectures": [
-    "T5WithLMHeadModel"
+    "T5ForConditionalGeneration"
   ],
   "d_ff": 3072,
   "d_kv": 64,
