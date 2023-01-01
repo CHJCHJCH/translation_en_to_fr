@@ -1,16 +1,11 @@
 ---
-language: 
-- en
-- fr
-- ro
-- de
-datasets:
-- c4
+language: multilingual
+license: apache-2.0
 tags:
 - summarization
 - translation
-
-license: apache-2.0
+datasets:
+- c4
 ---
 
 # Model Card for T5 Base
