@@ -45,6 +45,12 @@
       "max_length": 300,
       "num_beams": 4,
       "prefix": "translate English to Romanian: "
+    },
+    "translation_en_to_es": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Spanish: "
     }
   },
   "vocab_size": 32128
