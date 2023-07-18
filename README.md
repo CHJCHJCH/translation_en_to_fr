@@ -1,15 +1,12 @@
 ---
-language: 
+language:
 - en
-- fr
-- ro
-- de
+- ar
 datasets:
 - c4
 tags:
 - summarization
 - translation
-
 license: apache-2.0
 ---
 
