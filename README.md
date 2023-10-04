@@ -1,16 +1,57 @@
 ---
-language: 
+language:
 - en
 - fr
 - ro
 - de
-datasets:
-- c4
+license: apache-2.0
 tags:
 - summarization
 - translation
-
-license: apache-2.0
+datasets:
+- c4
+model-index:
+- name: t5-base
+  results:
+  - task:
+      type: summarization
+      name: Summarization
+    dataset:
+      name: multi_news
+      type: multi_news
+      config: default
+      split: test
+    metrics:
+    - type: rouge
+      value: 9.5567
+      name: ROUGE-1
+      verified: true
+      verifyToken: eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJoYXNoIjoiMDljOTM0N2RiYzc3YTQzMmI3NDEzZWM5Yzk3Yjg2YmYyNjJhMDRiNTE4MDRjOTExNTA1MTQ3OGIwNTRmNDFjYyIsInZlcnNpb24iOjF9.yzE86M7G9L0_PKCsLtVHWpXFqBxeb8i32nuuBop5j7SbB5xaByGkxUFa8-F7HgNRxUsS3uw0PXb_k1PIYC1zDw
+    - type: rouge
+      value: 2.9816
+      name: ROUGE-2
+      verified: true
+      verifyToken: eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJoYXNoIjoiMjQxOWY4MzJlMzNiOTQ2MzE5MzZiZmU1NGVkZGYzMDQwOWRhZDE3ZWRjZTBmMDc1Y2I0MjU1YzQwZTc2ODY1MSIsInZlcnNpb24iOjF9.H9L3N7VebBc3Obg8oxBo1wVaC9VgL10WrFGMUHFaX1UGrj7KYulxjFucgHPg-i_PjXaYpBM-oINj8Zw0E0y5DA
+    - type: rouge
+      value: 7.3154
+      name: ROUGE-L
+      verified: true
+      verifyToken: eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJoYXNoIjoiODYxYzNkYjNkODM3ZDZkOTdhMmE4ODc0MGJkNTQ3Y2I5M2E3Njg5NzhlNDY2MzMwOWFmZDY5MWU5MzFjMTRiMCIsInZlcnNpb24iOjF9.XZxLyDXjsUzXyKWAmgh51AxT4jaZsK4HYkD9aJPC9-VBXmmXkrqaGyJhye5dtQ6RtXkxOaRpNYdG8H03Qt2eCg
+    - type: rouge
+      value: 8.7695
+      name: ROUGE-LSUM
+      verified: true
+      verifyToken: eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJoYXNoIjoiZjQ2ZmMwMDYzODJkMDAyMmRjMmFiMTBhNWY5MTRkNjg0ZDFjNmI1MjgxMTAwYjQ2OTY0YzU2ZDkxNjNkMjY2MCIsInZlcnNpb24iOjF9.nVRtI3LtI-soZzZshXnlFvMsAvx6uzdDlg5QZNfMji15U4PASuh3XpzpGKZ643XHQ0K0E71Y-I2xUiKD-a1WDQ
+    - type: loss
+      value: 14.251723289489746
+      name: loss
+      verified: true
+      verifyToken: eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJoYXNoIjoiNzFiOGU1ZTQ1OTA3MGJmOWM0OGE5NjFmM2ViYjc5NDg0NWNkODc1ZjUxOWVlNmFhMGU3NjIwZjdmZjIxYWJiNSIsInZlcnNpb24iOjF9.eSvg_o2uELEB9fd5pkM7DJNoq2o8wPB8-F4U_dscrCau7jXTwGaalPE_N-SclNabsc7uehHCHgdLxM_cdkllAg
+    - type: gen_len
+      value: 18.9972
+      name: gen_len
+      verified: true
+      verifyToken: eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJoYXNoIjoiYjFhZDUzMzBlOWRjZTc4MjczZjRlYzFhNDg4M2IyZDE3NDMyZWMwOTBiMjc4NDAwYmM1YWQwOWUzNDhkZDQxMyIsInZlcnNpb24iOjF9.Oezvqm98JT21wbiIrXXEjwuTXmXAB5F6mQEKCGswFv5AzuD9iHgy_9oQQmCI-bVc66eJltTaay4Obr5RN57sBA
 ---
 
 # Model Card for T5 Base
