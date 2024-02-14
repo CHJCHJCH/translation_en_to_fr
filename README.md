@@ -1,5 +1,6 @@
 ---
-language: 
+pipeline_tag: translation
+language:
 - en
 - fr
 - ro
@@ -9,7 +10,6 @@ datasets:
 tags:
 - summarization
 - translation
-
 license: apache-2.0
 ---
 
