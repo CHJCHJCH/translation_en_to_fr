@@ -2,9 +2,7 @@
 pipeline_tag: translation
 language:
 - en
-- fr
-- ro
-- de
+- ja
 datasets:
 - c4
 tags:
